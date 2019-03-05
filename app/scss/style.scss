@@ -1,0 +1,25 @@
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.top-header__inner {
+    height: 90px;
+}
+
+.top-header__question {
+    margin-right: 25px;
+}
