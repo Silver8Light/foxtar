@@ -1,34 +1,30 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .top-header__inner {
-    height: 90px;
+  height: 90px;
 }
 
 .top-header__question {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .top-header__button {
-    margin-top: -5px;
-    margin-right: 25px;
+  margin-top: -5px;
+  margin-right: 25px;
 }
