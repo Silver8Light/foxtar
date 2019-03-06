@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.d-flex {
+  display: flex;
+}
+
+.product-information {
+  border: 1px solid #dcdcdc;
+  max-width: 270px;
+}
+
+.product-information__title {
+  padding-left: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.product-information__info {
+  max-width: 208px;
+  border-top: 1px solid #dcdcdc;
+  padding: 20px 0 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.product-information__info span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "Open Sans", sans-serif;
+  color: #020202;
+}
+
+.product-information__item {
+  color: #70838d;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
