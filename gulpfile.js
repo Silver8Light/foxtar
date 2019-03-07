@@ -61,13 +61,22 @@ gulp.task('pre-build', async function(){
 
 gulp.task('clean', async function(){
 	return del.sync('dist')
-
 });
 
 gulp.task('watch', async function(){
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/**/*.js', browserSync.reload);
+	gulp.watch('app/*.html', gulp.parallel('html'));
+	gulp.watch('app/**/*.js', gulp.parallel('js'));
+});
+
+gulp.task('js', async function(){
+	return gulp.src('app/js/main.js')
+	.pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('html', async function(){
+	return gulp.src('app/*.html')
+	.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('default', gulp.parallel('scss', 'css','browser-sync' ,'watch'));
