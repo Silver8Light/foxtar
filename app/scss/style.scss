@@ -1,17 +1,65 @@
-*{
+* {
 	box-sizing: border-box;
 }
-.container{
-    max-width:1170px;
-    margin:0 auto;
-    padding:0 15px;
+
+body {
+    margin: 0;
 }
-.d-flex{
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.d-flex {
     display: flex;
 }
-.justify-content-between{
+
+.justify-content-between {
     justify-content: space-between;
 }
+
+.products {
+    background-color: #f4f6f5;
+    padding-top: 120px;
+}
+
+.products__title {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    color: #263238;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.products__mixitup {
+    text-align: center;
+    button {
+        padding: 10px 20px;
+        border: none;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        background-color: #ffffff;
+        cursor: pointer;
+        outline: none;
+        &.active {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    }
+    .products__btn {
+        margin-bottom: 60px;
+    }
+    .products__container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .tutorials{
     font-family:'Roboto';
     font-weight: bold;
@@ -30,6 +78,7 @@
     height: 270px;
     background-color: #d4d4d4;
 }
+
 .tutorials__items__textbox{
     width: 370px;
     height: 100px;
@@ -37,6 +86,7 @@
     text-align: center;
     padding: 40px 15px;
 }
+
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?e0wtts');
@@ -67,11 +117,6 @@
     content: "\f054";
   }
 
-
-.d-flex {
-    display: flex;
-}
-
 .justify-content-space-between{
     justify-content: space-between;
 }
@@ -79,7 +124,6 @@
 .align-items-center {
     align-items: center;
 }
-
 
 .box{
 width: 270px;
@@ -111,7 +155,6 @@ border-bottom: 1px solid #dde3e8;
 	color: #8bc34a;
 }
 
-
 .product,
 .product_number {
 margin-bottom: 50px;
@@ -121,7 +164,6 @@ margin-top: 25px;
 .product_item {
 margin-bottom: 30px;
 }
-
 
 a {
 color: #263238;
