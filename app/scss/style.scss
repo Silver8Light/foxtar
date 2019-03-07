@@ -1,5 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=cyrillic-ext');
+*{
+	box-sizing: border-box;
+}
 .container{
     max-width:1170px;
     margin:0 auto;
@@ -34,7 +35,7 @@
     height: 100px;
     background-color: #f8f8f8;
     text-align: center;
-    line-height:100px; 
+    padding: 40px 15px;
 }
 @font-face {
     font-family: 'icomoon';
