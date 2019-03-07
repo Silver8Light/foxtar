@@ -1,23 +1,68 @@
-.d-flex{
+
+.d-flex {
 	display: flex;
 }
-.justify-content-between{
-	justify-content: space-between;
-}
-.align-items-center{
-		align-items: center;	
-}
 
-.container{
+.container {
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-.top-header__inner{
-	height: 90px;
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-.top-header__question{
-	margin-right: 25px;
+.benefits {
+	padding: 120px 0;
+	background-color: #263238;
 }
+
+.benefits__items {
+	text-align: center;
+	justify-content: space-around;
+}
+
+.benefits__item {
+	width: 315px;
+}
+
+.benefits__icon {
+	width: 113px;
+	height: 113px;
+	border-radius: 50%;
+	background-color: #b5b5b5;
+	margin: 0 auto;
+}
+
+.benefits__title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 79px;
+}
+
+.benefits__name {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+	margin: 30px 0 22px 0;
+}
+
+.benefits__name-green {
+	color: #8bc34a;
+}
+
+.benefits__text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #b0bec5;
+	font-weight: 400;
+	line-height: 24px;
+}
+
