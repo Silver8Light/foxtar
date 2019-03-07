@@ -22,6 +22,7 @@ body {
 
 .products {
   background-color: #f4f6f5;
+  padding-top: 120px;
 }
 
 .products__title {
@@ -31,7 +32,7 @@ body {
   line-height: 60px;
   color: #263238;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .products__mixitup {
