@@ -61,7 +61,6 @@ gulp.task('pre-build', async function(){
 
 gulp.task('clean', async function(){
 	return del.sync('dist')
-
 });
 
 gulp.task('watch', async function(){
@@ -72,12 +71,13 @@ gulp.task('watch', async function(){
 
 gulp.task('js', async function(){
 	return gulp.src('app/js/main.js')
-	.pipe(browserSync.reload({stream: true}))		
+	.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('html', async function(){
 	return gulp.src('app/*.html')
 	.pipe(browserSync.reload({stream: true}))		
+
 });
 
 gulp.task('default', gulp.parallel('scss', 'css','browser-sync' ,'watch'));
