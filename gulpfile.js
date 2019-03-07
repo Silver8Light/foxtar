@@ -23,8 +23,7 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
-	return gulp.src(['',
-										''])
+	return gulp.src('node_modules/mixitup/dist/mixitup.min.js')
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
