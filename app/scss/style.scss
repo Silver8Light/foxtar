@@ -58,6 +58,7 @@ body {
         display: flex;
         justify-content: center;
     }
+}
 
 .tutorials{
     font-family:'Roboto';
@@ -77,6 +78,7 @@ body {
     height: 270px;
     background-color: #d4d4d4;
 }
+
 .tutorials__items__textbox{
     width: 370px;
     height: 100px;
@@ -84,6 +86,7 @@ body {
     text-align: center;
     padding: 40px 15px;
 }
+
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?e0wtts');
@@ -122,7 +125,6 @@ body {
     align-items: center;
 }
 
-
 .box{
 width: 270px;
 height: 312px;
@@ -153,7 +155,6 @@ border-bottom: 1px solid #dde3e8;
 	color: #8bc34a;
 }
 
-
 .product,
 .product_number {
 margin-bottom: 50px;
@@ -163,7 +164,6 @@ margin-top: 25px;
 .product_item {
 margin-bottom: 30px;
 }
-
 
 a {
 color: #263238;
