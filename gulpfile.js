@@ -76,7 +76,8 @@ gulp.task('js', async function(){
 
 gulp.task('html', async function(){
 	return gulp.src('app/*.html')
-	.pipe(browserSync.reload({stream: true}))
+	.pipe(browserSync.reload({stream: true}))		
+
 });
 
 gulp.task('default', gulp.parallel('scss', 'css','browser-sync' ,'watch'));

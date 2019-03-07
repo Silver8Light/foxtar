@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?e0wtts");
@@ -22,11 +23,44 @@
 
 .icon-chevron-right:before {
   content: "\f054";
+
 }
 
 .d-flex {
   display: flex;
 }
+
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.tutorials {
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.tutorials__title {
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.tutorials__items__box {
+  width: 370px;
+  height: 270px;
+  background-color: #d4d4d4;
+}
+
+.tutorials__items__textbox {
+  width: 370px;
+  height: 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+  line-height: 200px;
 
 .justify-content-space-between {
   justify-content: space-between;
