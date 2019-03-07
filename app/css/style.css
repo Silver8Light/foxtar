@@ -58,7 +58,7 @@
   margin-bottom: 30px;
 }
 
-.chevron:before {
+.chevron__name:before {
   font-family: 'icomoon';
   content: "\f054";
   margin-right: 13px;
