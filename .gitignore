@@ -32,4 +32,4 @@ package-lock.json
 Thumbs.db
 
 app/css/
-app/libs/libs.scss
+app/scss/libs.scss
