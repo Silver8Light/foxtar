@@ -6,6 +6,23 @@ body {
     margin: 0;
 }
 
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -34,18 +51,6 @@ body {
 .col-8 {
 	width: 66.6666667%;
 	padding: 0 15px;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.align-items-center {
-    align-items: center;
 }
 
         /*Products-mixitup 03_main home*/
@@ -88,6 +93,57 @@ body {
         justify-content: center;
     }
 }
+        /*Benefits 03_home page*/
+.benefits {
+    padding: 120px 0;
+    background-color: #263238;
+}
+        
+.benefits__items {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.benefits__item {
+    width: 315px;
+}
+
+.benefits__icon {
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    background-color: #b5b5b5;
+    margin: 0 auto;
+}
+
+.benefits__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 79px;
+}
+
+.benefits__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin: 30px 0 22px 0;
+}
+
+.benefits__name-green {
+    color: #8bc34a;
+}
+
+.benefits__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b0bec5;
+    font-weight: 400;
+    line-height: 24px;
+}
 
         /*Tutorials 03_home page*/
 .tutorials{
@@ -117,7 +173,7 @@ body {
     padding: 40px 15px;
 }
 
-/*ICOMOON*/
+        /*ICOMOON*/
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?e0wtts');
@@ -147,7 +203,7 @@ body {
   .icon-chevron-right:before {
     content: "\f054";
 }
-/*Categories 04_all new items*/
+        /*Categories 04_all new items*/
 .box{
 width: 270px;
 height: 312px;
