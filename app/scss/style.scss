@@ -172,3 +172,73 @@ font-size: 15px;
 font-weight: 400;
 text-decoration: none;
 }
+
+.goods-item{
+    display: block;
+    border: #dadee2 1px solid;
+    border-bottom: none;
+    max-width: 443px;
+    transition: all .3s;
+    &:hover{
+        box-shadow: 0px 20px 6px 3px rgba(0,0,0,0.2);
+    }
+    .goods-item__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: #dadee2 1px solid;
+        font-family: 'roboto';
+        font-weight: medium;
+        padding: 25px 20px 30px 30px;
+        .goods-item__name{
+            .goods-item__title{
+                display: block;
+                color: #263238;
+                font-size: 18px;
+                margin-bottom: 15px;
+
+            }
+            .goods-item__subtitle{
+                display: block;
+                color: #8bc34a;
+                font-size: 14px;
+            }
+        }
+        .goods-item__price{
+            font-size: 20px;
+            font-weight: bold;
+            color: #263238;
+        }
+        .user{
+            .username{
+                display: inline-block; 
+                color: #546e7a;
+
+                }
+            }
+        .rating{
+            .fa-star{
+                font-size: 12px;
+                color:#ffa726;
+            }
+            .reviews{
+                color: #263238;
+                font-size: 12px;
+                &::before{
+                    content: ' (';
+                    color:#b0bec5;
+                }
+                &::after{
+                    content: ')';
+                    color:#b0bec5;
+                }
+            }
+        }
+        
+        }
+    }
+    
+
+.goods-item__desc{
+    padding: 15px 20px 30px 30px;
+}
