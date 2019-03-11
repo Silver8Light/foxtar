@@ -18,17 +18,12 @@ $OpenSans:'Open Sans', sans-serif;
     font-weight:700;
     line-height:60px;
 }
-.product-information__info__inner{
-    max-width: 185px;
-    flex-direction: column;
-}
 
 .product-information__item{
     color: #70838d;
     font-weight:400;
     font-size:14px;
     font-family:$OpenSans;
-    width: 100%;
 }
 
 .product-information__info{
@@ -37,6 +32,7 @@ $OpenSans:'Open Sans', sans-serif;
     padding: 20px 0 30px;
     box-sizing: border-box;
     margin: 0 auto;
+    flex-direction: column;
         & span{
         font-weight:700;
         font-size:14px;
