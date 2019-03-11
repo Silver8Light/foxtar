@@ -50,3 +50,59 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.set-price{
+    width: 1600px;
+}
+
+.set-price-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #263238;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.license-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #444444;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 600;
+    position: relative;
+    // float: left;
+}
+
+.license-title::before{
+    content: "*";
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #8bc34a;
+    position: absolute;
+    left: 120px;
+    bottom: 5px;
+}
+
+.set-price-inner{
+    max-width: 1170px;
+}
+
+.reg-license-price input[type="text"]{
+    float: right;
+    width: 900px;
+    height: 30px;
+    margin-top: -30px;
+    margin-right: 50px;
+}
+
+.ex-license-price input[type="text"]{
+    float: right;
+    width: 900px;
+    height: 30px;
+    margin-top: -30px;
+    margin-right: 50px;
+}
+
+.reg-license{
+    max-width: 1170px;
+}
