@@ -6,20 +6,54 @@ body {
     margin: 0;
 }
 
-.container {
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 0 15px;
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 .d-flex {
-    display: flex;
+	display: flex;
 }
 
 .justify-content-between {
     justify-content: space-between;
 }
 
+.align-items-center {
+    align-items: center;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+}
+
+.col-3 {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.col-4 {
+	width: 33.333%;
+	padding: 0 15px;
+}
+
+.col-6 {
+	width: 50%;
+	padding: 0 15px;
+}
+
+.col-8 {
+	width: 66.6666667%;
+	padding: 0 15px;
+}
+
+        /*Products-mixitup 03_main home*/
 .products {
     background-color: #f4f6f5;
     padding-top: 120px;
@@ -59,7 +93,59 @@ body {
         justify-content: center;
     }
 }
+        /*Benefits 03_home page*/
+.benefits {
+    padding: 120px 0;
+    background-color: #263238;
+}
+        
+.benefits__items {
+    text-align: center;
+    justify-content: space-around;
+}
 
+.benefits__item {
+    width: 315px;
+}
+
+.benefits__icon {
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    background-color: #b5b5b5;
+    margin: 0 auto;
+}
+
+.benefits__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 79px;
+}
+
+.benefits__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin: 30px 0 22px 0;
+}
+
+.benefits__name-green {
+    color: #8bc34a;
+}
+
+.benefits__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b0bec5;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+        /*Tutorials 03_home page*/
 .tutorials{
     font-family:'Roboto';
     font-weight: bold;
@@ -87,6 +173,7 @@ body {
     padding: 40px 15px;
 }
 
+        /*ICOMOON*/
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?e0wtts');
@@ -96,9 +183,9 @@ body {
       url('../fonts/icomoon.svg?e0wtts#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
   
-  [class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -111,20 +198,12 @@ body {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
   
   .icon-chevron-right:before {
     content: "\f054";
-  }
-
-.justify-content-space-between{
-    justify-content: space-between;
 }
-
-.align-items-center {
-    align-items: center;
-}
-
+        /*Categories 04_all new items*/
 .box{
 width: 270px;
 height: 312px;
@@ -171,4 +250,39 @@ font-family: 'Roboto', sans-serif;
 font-size: 15px;
 font-weight: 400;
 text-decoration: none;
+}
+
+        /*Prod-inf-block 09_product details*/
+.prod-inf {
+    padding: 0 30px 30px 30px;
+    border: 1px solid #dfdfdf;
+}
+
+.prod-inf__title {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    border-bottom: 1px solid #dde3e8;
+    margin-bottom: 9px;
+}
+
+.prod-inf__block {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 36px;
+    color: #263238;
+    span {
+        font-weight: 400;
+        color: #70838d;
+    }
+    .prod-inf__browsers span {
+        display: block;
+        line-height: normal;
+    }
+    & .space span:before {
+        content: " ";
+        white-space: pre;
+    }
 }
