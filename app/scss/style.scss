@@ -1,4 +1,97 @@
+<<<<<<< HEAD
   @font-face {
+=======
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.products {
+    background-color: #f4f6f5;
+    padding-top: 120px;
+}
+
+.products__title {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    color: #263238;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.products__mixitup {
+    text-align: center;
+    button {
+        padding: 10px 20px;
+        border: none;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        background-color: #ffffff;
+        cursor: pointer;
+        outline: none;
+        &.active {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    }
+    .products__btn {
+        margin-bottom: 60px;
+    }
+    .products__container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.tutorials{
+    font-family:'Roboto';
+    font-weight: bold;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.tutorials__title{
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.tutorials__items__box{
+    width: 370px;
+    height: 270px;
+    background-color: #d4d4d4;
+}
+
+.tutorials__items__textbox{
+    width: 370px;
+    height: 100px;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+@font-face {
+>>>>>>> 7e703dee2696aabb3e71e297b9e986b9af0ea7cf
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?6sv4o5');
     src:  url('../fonts/icomoon.eot?6sv4o5#iefix') format('embedded-opentype'),
@@ -50,11 +143,14 @@
 }
 
 
+<<<<<<< HEAD
 
 .d-flex {
     display: flex;
     }
 
+=======
+>>>>>>> 7e703dee2696aabb3e71e297b9e986b9af0ea7cf
 .justify-content-space-between{
     justify-content: space-between;
     }
@@ -62,7 +158,6 @@
 .align-items-center {
     align-items: center;
     }
-
 
 .box{
     width: 270px;
@@ -94,7 +189,6 @@
     color: #8bc34a;
   }
 
-
 .product,
 .product_number {
     margin-bottom: 50px;
@@ -104,7 +198,6 @@
 .product_item {
     margin-bottom: 30px;
     }
-
 
 a {
     color: #263238;

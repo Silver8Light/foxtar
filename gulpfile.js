@@ -23,8 +23,7 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
-	return gulp.src(['',
-										''])
+	return gulp.src('node_modules/mixitup/dist/mixitup.min.js')
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
@@ -76,7 +75,8 @@ gulp.task('js', async function(){
 
 gulp.task('html', async function(){
 	return gulp.src('app/*.html')
-	.pipe(browserSync.reload({stream: true}))
+	.pipe(browserSync.reload({stream: true}))		
+
 });
 
 gulp.task('default', gulp.parallel('scss', 'css','browser-sync' ,'watch'));
