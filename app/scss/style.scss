@@ -7,7 +7,7 @@ $OpenSans:'Open Sans', sans-serif;
 }
 
 .product-information{
-    border:1px solid #dcdcdc;
+    border:1px solid #ccc;
     max-width: 270px;
 }
 
@@ -18,21 +18,9 @@ $OpenSans:'Open Sans', sans-serif;
     font-weight:700;
     line-height:60px;
 }
-
-.product-information__info{
-    max-width: 208px;
-    border-top: 1px solid #dcdcdc;
-    padding: 20px 0 30px;
-    box-sizing: border-box;
-    margin: 0 auto;
+.product-information__info__inner{
+    max-width: 185px;
     flex-direction: column;
-        & span{
-            font-weight:700;
-            font-size:14px;
-            line-height:36px;
-            font-family:$OpenSans;
-            color:#020202;
-        }
 }
 
 .product-information__item{
@@ -40,4 +28,20 @@ $OpenSans:'Open Sans', sans-serif;
     font-weight:400;
     font-size:14px;
     font-family:$OpenSans;
+    width: 100%;
+}
+
+.product-information__info{
+    max-width: 208px;
+    border-top: 1px solid #ccc;
+    padding: 20px 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+        & span{
+        font-weight:700;
+        font-size:14px;
+        line-height:36px;
+        font-family:$OpenSans;
+        color:#020202;
+        }
 }
