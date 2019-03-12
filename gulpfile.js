@@ -5,7 +5,9 @@ var gulp = require('gulp'),
 		uglifyjs = require('gulp-uglifyjs'),
 		cssnano = require('gulp-cssnano'),
 		rename = require('gulp-rename'),
-		del = require('del');		
+		del = require('del');
+
+
 			
 gulp.task('scss', async function(){
 	return gulp.src('app/scss/**/*.scss')
@@ -23,8 +25,8 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
-	return gulp.src(['',
-										''])
+	return gulp.src(['app/libs/slick-carousel/slick/slick.js',
+					''])
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
