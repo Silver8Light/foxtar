@@ -17,9 +17,10 @@
     "gulp-rename": "1.4.0",
     "gulp-sass": "4.0.2",
     "gulp-uglifyjs": "0.6.2",
+    "ion-rangeslider": "^2.3.0",
     "mixitup": "^3.3.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "8.0.1"
   }
 }
