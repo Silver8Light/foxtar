@@ -2,8 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?4rznv2");
-  src: url("../fonts/icomoon.eot?4rznv2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4rznv2") format("truetype"), url("../fonts/icomoon.woff?4rznv2") format("woff"), url("../fonts/icomoon.svg?4rznv2#icomoon") format("svg");
+  src:  url('../fonts/icomoon.eot?o6wj5u');
+  src:  url('../fonts/icomoon.eot?o6wj5u#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?o6wj5u') format('truetype'),
+    url('../fonts/icomoon.woff?o6wj5u') format('woff'),
+    url('../fonts/icomoon.svg?o6wj5u#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,48 +20,52 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-right:before {
-  content: "\f054";
+.icon-angle-right:before {
+  content: "\f105";
+}
+.icon-location-arrow:before {
+  content: "\f124";
+}
+.icon-compass:before {
+  content: "\e949";
 }
 
-.icon-caret-left:before {
-  content: "\f0d9";
-}
-
-.icon-caret-right:before {
-  content: "\f0da";
-}
+$green:#8bc34a;
+$colorwhite:#ffff;
+$roboto:'Roboto', sans-serif;
+$opensans:"Open Sans", sans-serif;
 
 a {
   list-style: none;
   text-decoration: none;
 }
 
-.d-flex {
-  display: flex;
-}
 .product-information {
   border: 1px solid #ccc;
   max-width: 270px;
 }
+
 .product-information__title {
   padding-left: 25px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $opensans;
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
 }
+
 .product-information__item {
   color: #70838d;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $opensans;
 }
+
 .product-information__info {
   max-width: 208px;
   border-top: 1px solid #ccc;
@@ -66,14 +73,15 @@ a {
   box-sizing: border-box;
   margin: 0 auto;
   flex-direction: column;
-}
-.product-information__info span {
+  span {
   font-weight: 700;
   font-size: 14px;
   line-height: 36px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $opensans;
   color: #020202;
 }
+}
+
 .footer_product_details {
   background-color: #263238;
   margin-top: 50px;
@@ -84,55 +92,90 @@ a {
   margin: 0 auto;
   display: flex;
 }
-.col-4 {
+
+.col-3 {
   width: 25%;
   flex-direction: column;
-  margin-left: 80px;
   padding-bottom: 135px;
 }
-.col-4:first-child {
-  margin-left: 0;
-}
-.col-4 img {
+
+img.line {
   padding: 25px 0 35px;
 }
+
 .container__footer-title {
   margin-top: 110px;
-  color: #ffffff;
+  color: $colorwhite;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: $roboto;
 }
+
 .container__footer-item {
-  color: #ffffff;
+  color: $colorwhite;
   font-size: 15px;
   font-weight: 400;
   line-height: 36px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $roboto;
   position: relative;
   padding-left: 20px;
+  display: block;
+  ::before{
+    content: "\f105";
+    position: absolute;
+    font-size: 18px;
+    font-family: 'icomoon';
+    color: $green;
+    left: 0;
+}
 }
 
-.container__footer-item::before {
-  content: "\f054";
-  position: absolute;
-  font-size: 10px;
-  font-family: 'icomoon';
-  color: #8bc34a;
-  left: 0;
-}
-
-.social__footer a img {
+.social__footer a{
   padding-right: 7px;
-  padding-bottom: 35px;
+  display: inline-block;
 }
 
 .footer__sign {
-  color: #ffffff;
+  color: $colorwhite;
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
-  font-family: 'Roboto', sans-serif;
-  padding-bottom: 20px;
+  font-family: $roboto;
+  padding: 35px 0 20px;
+}
+
+.footer-input-email input{
+  width: 245px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #697378;
+  font-family: $roboto;
+  font-weight: 400;
+  padding-left: 15px;
+  background-color: #2f3c43;
+  border: none;
+}
+
+.footer-input-submit input{
+  position: absolute;
+  right: 30px;
+  width: 43px;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color:$green;
+}
+
+.footer-input-email{
+  position: relative;
+  ::after{
+    content: "\f124";
+    position: absolute;
+    font-size: 18px;
+    font-family: 'icomoon';
+    color: $colorwhite;
+    right: 45px;
+    top: 10px;
+}
 }
