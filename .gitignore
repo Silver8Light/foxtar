@@ -32,3 +32,4 @@ package-lock.json
 Thumbs.db
 
 app/css/
+app/js/libs.min.js
