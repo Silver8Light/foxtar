@@ -23,7 +23,10 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
-	return gulp.src('node_modules/mixitup/dist/mixitup.min.js')
+	return gulp.src([
+		// 'node_modules/mixitup/dist/mixitup.min.js',
+									'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
+								])
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
@@ -79,5 +82,5 @@ gulp.task('html', async function(){
 
 });
 
-gulp.task('default', gulp.parallel('scss', 'css','browser-sync' ,'watch'));
+gulp.task('default', gulp.parallel('scss', 'script', 'css','browser-sync' ,'watch'));
 gulp.task('build', gulp.parallel('clean', 'scss', 'css', 'script', 'pre-build'));
