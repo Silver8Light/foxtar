@@ -50,4 +50,6 @@ $(function () {
 				hide_min_max: true
 		});
 
+		$('.upload__form input[type="file"], .upload__form select').styler();
+
 });
