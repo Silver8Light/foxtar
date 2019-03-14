@@ -5,7 +5,9 @@ var gulp = require('gulp'),
 		uglifyjs = require('gulp-uglifyjs'),
 		cssnano = require('gulp-cssnano'),
 		rename = require('gulp-rename'),
-		del = require('del');		
+		del = require('del');
+
+
 			
 gulp.task('scss', async function(){
 	return gulp.src('app/scss/**/*.scss')
@@ -23,10 +25,15 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
+<<<<<<< HEAD
+	return gulp.src(['app/libs/slick-carousel/slick/slick.js',
+	'node_modules/mixitup/dist/mixitup.min.js'])
+=======
 	return gulp.src([
 		// 'node_modules/mixitup/dist/mixitup.min.js',
 									'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
 								])
+>>>>>>> d2f8333776fe8185315818e13035c354e64b8b88
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
@@ -78,9 +85,9 @@ gulp.task('js', async function(){
 
 gulp.task('html', async function(){
 	return gulp.src('app/*.html')
-	.pipe(browserSync.reload({stream: true}))		
-
+	.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('default', gulp.parallel('scss', 'script', 'css','browser-sync' ,'watch'));
 gulp.task('build', gulp.parallel('clean', 'scss', 'css', 'script', 'pre-build'));
+
