@@ -329,7 +329,56 @@ input[type=text] {
     color: #fff;
 }
 
- 
 
- 
+
+
+//start new style
+.upload-product__page{
+	background-color: $default-fon;
+}
+.upload{
+	background-color: #fff;
+	border: 1px solid $border-color;
+}
+.upload__title{
+	border-bottom: 1px solid $border-color;
+	color: $title;
+	font-size: 24px;
+	line-height: 64px;
+	padding-left: 35px;
+	margin-bottom: 40px;
+}
+.upload__form{
+	padding-right: 50px;
+	label{
+		padding-left: 40px;
+	}
+	input{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		height: 40px;
+		background-color: #f9f9f9;
+		border: 1px solid $border-color;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	textarea{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px 15px;
+		resize: none;
+		height: 140px;
+		background-color: #f9f9f9;
+	}
+	select,
+	.jq-selectbox.jqselect{
+		margin-bottom: 20px;
+		background-color: #f9f9f9;
+		display: block;
+		width: 100%;
+	}
+}
+//end new style
 

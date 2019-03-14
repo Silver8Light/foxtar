@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,147 @@
 </head>
 
 <body>
-        <section class="upload-product">
-                <div class="container">
-                    <div class="set-price">
-                        <div class="set-price-title">
-                                Set Your Price (US$)
-                        </div>
-                        <div class="set-price-inner">
-                            <div class="reg-license">
-                                <div class="license-title">Regular License</div>
-                                <form>
-                                    <div class="reg-license-price">
-                                        <input type="text" placeholder="$00.00">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="ex-license">
-                                    <div class="license-title">Extended License</div>
-                                    <form>
-                                            <div class="ex-license-price">
-                                                    <input type="text" placeholder="$00.00">
-                                            </div>
-                                    </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+	<div class="upload-product__page">
+
+		<div class="bread-crumbs">
+			<div class="container">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<span>Product Page</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="upload">
+				<form class="upload__form">
+					<div class="upload__title">
+						Upload Your item
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Select Categories <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<select>
+								<option>select</option>
+								<option>opt 1</option>
+								<option>opt 2</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Product Name <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="text" placeholder="Enter your product name here ...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Product Description <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<textarea required placeholder="<h1> Type your text  here </h1>"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Upload Main File <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="file" placeholder="Enter your product name here ...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Upload Screenshots <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="file" placeholder="Enter your product name here ...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Select Categories <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<select>
+								<option>Select File Type </option>
+								<option>opt 1</option>
+								<option>opt 2</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								File Dimensions <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="text" placeholder="Enter the item  dimentionss here ...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Item Tags <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="text" placeholder="Enter Tag Here">
+						</div>
+					</div>
+					<div class="upload__title">
+						Set Your Price (US$)
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Regular License <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="text" placeholder="$00.00">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3">
+							<label>
+								Extended License <sup>*</sup>
+							</label>
+						</div>
+						<div class="col-9">
+							<input required type="text" placeholder="$00.00">
+						</div>
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
+
 </html>
