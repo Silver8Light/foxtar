@@ -682,4 +682,139 @@ input {
 }
 
 // end style all-items
->>>>>>> d2f8333776fe8185315818e13035c354e64b8b88
+<<<<<<< HEAD
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.top-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-header__inner {
+  height: 90px;
+}
+
+.top-header__block {
+  margin-right: 65px;
+}
+
+.top-header__question {
+  margin-right: 25px;
+  font-size: 15px;
+  color: #546e7a;
+}
+
+.top-header__question span {
+  color: #ec7063;
+}
+
+.top-header__question a {
+  display: inline-block;
+  text-decoration: none;
+  color: #546e7a;
+}
+
+.top-header__button {
+  margin-right: 25px;
+  position: relative;
+}
+
+.top-header__basket {
+  display: inline-block;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top:-7px;
+  left: -5px;
+}
+
+.top-header__basket::after{
+  content: "";
+  display: inline-block;
+  font-size: 13px;
+  background-color: #e74e3c;
+  text-align: center;
+  vertical-align: middle;
+	color: #ffffff;
+	width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+
+.top-header__basket a {
+  display: inline-block;
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.top-header__basket span {
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.icon-cart {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.registration-block {
+  position: relative;
+  margin-left: 25px;
+}
+
+.top-header__login {
+  margin-right: 25px;
+  font-size: 12px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #8bc34a;
+  width: 72px;
+  height: 32px;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: -7px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.top-header__register {
+  font-size: 12px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #e74e3c;
+  width: 72px;
+  height: 32px;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top:-7px;
+  left: 80px;
+  border-radius: 5px;
+}
