@@ -25,15 +25,10 @@ gulp.task('browser-sync', async function(){
 });
 
 gulp.task('script', async function(){
-<<<<<<< HEAD
-	return gulp.src(['app/libs/slick-carousel/slick/slick.js',
-	'node_modules/mixitup/dist/mixitup.min.js'])
-=======
 	return gulp.src([
 		// 'node_modules/mixitup/dist/mixitup.min.js',
 									'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
 								])
->>>>>>> d2f8333776fe8185315818e13035c354e64b8b88
 					.pipe(concat('libs.min.js'))
 					.pipe(uglifyjs())
 					.pipe(gulp.dest('app/js'))
