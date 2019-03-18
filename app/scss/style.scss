@@ -2,30 +2,175 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
 }
-
 ul, li {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+.header{
 
-.d-flex {
-	display: flex;
+}
+.top-header__inner {
+  height: 90px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header__question {
+  margin-right: 25px;
+  margin-left: auto;
 }
 
-.justify-content-between {
-    justify-content: space-between;
+/* Menu */
+.nav {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #263238;
 }
 
-.align-items-center {
-    align-items: center;
+.menu {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-        /*Products-mixitup 03_main home*/
+.menu li {
+  display: inline;
+  list-style-type: none;
+  padding: 25px 35px 25px 0px;
+}
+
+.menu ul {
+  padding-left: 15px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.menu li a {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.top-header__login {
+  margin-right: 25px;
+  font-size: 12px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #8bc34a;
+  width: 72px;
+  height: 32px;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top: -7px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.top-header__register {
+  font-size: 12px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #e74e3c;
+  width: 72px;
+  height: 32px;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  top:-7px;
+  left: 80px;
+  border-radius: 5px;
+}
+
+.top-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-header__inner {
+  height: 90px;
+}
+
+.top-header__block {
+  margin-right: 65px;
+}
+
+.top-header__question {
+  margin-right: 25px;
+  font-size: 15px;
+  color: #546e7a;
+}
+
+.top-header__question span {
+  color: #ec7063;
+}
+
+.top-header__question a {
+  display: inline-block;
+  text-decoration: none;
+  color: #546e7a;
+}
+
+.top-header__button {
+  margin-right: 25px;
+  position: relative;
+}
+
+.top-header__basket {
+  display: inline-block;
+  background-color: #f5f5f5;
+  font-size: 12px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top:-7px;
+  left: -5px;
+}
+
+.top-header__basket::after{
+  content: "";
+  display: inline-block;
+  font-size: 13px;
+  background-color: #e74e3c;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+
+.top-header__basket a {
+  display: inline-block;
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.top-header__basket span {
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
 .products {
     background-color: #f4f6f5;
     padding-top: 120px;
@@ -150,82 +295,6 @@ ul, li {
 
 }
 
-        /*ICOMOON*/
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?e0wtts');
-    src:  url('../fonts/icomoon.eot?e0wtts#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?e0wtts') format('truetype'),
-      url('../fonts/icomoon.woff?e0wtts') format('woff'),
-      url('../fonts/icomoon.svg?e0wtts#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-  
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-  
-  .icon-chevron-right:before {
-    content: "\f054";
-}
-        /*Categories 04_all new items*/
-
-
-a {
-color: #263238;
-font-family: 'Roboto', sans-serif;
-font-size: 15px;
-font-weight: 400;
-text-decoration: none;
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/fonts_1/icomoon.eot?ze8lpa');
-    src:  url('../fonts/fonts_1/icomoon.eot?ze8lpa#iefix') format('embedded-opentype'),
-      url('../fonts/fonts_1/icomoon.ttf?ze8lpa') format('truetype'),
-      url('../fonts/fonts_1/icomoon.woff?ze8lpa') format('woff'),
-      url('../fonts/fonts_1/icomoon.svg?ze8lpa#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-shopping-cart:before {
-    content: "\f07a";
-  }
-  .icon-heart-o:before {
-    content: "\f08a";
-  }
-  
-  
-  
   .product-price{
       width: 270px;
       height: 338px;
@@ -261,9 +330,6 @@ text-decoration: none;
     color: white;
 }
 
-.flex-direction-column{
-    flex-direction:column;
-}
 
 .add-cart,
 .add-favour,
@@ -345,87 +411,14 @@ button{
         content: " ";
         white-space: pre;
     }
-* {
-	box-sizing: border-box;
-}
 
-.d-flex {
-	display: flex;
-}
 
-.justify-content-between {
-	justify-content: space-between;
-}
 
-.justify-content-start {
-	justify-content: flex-start;
-}
 
-.align-items-center {
-	align-items: center;
-}
 
-body {
-	max-width: 1920px;
-	font-family: 'Roboto';
-	font-size: 14px;
-	overflow-x: hidden;
-	margin: 0;
-	background-color: #ffffff;
-}
 
-body a {
-	text-decoration: none;
-	color: #cbcbcb;
-}
 
-li {
-	list-style-type: none;
-}
 
-.container {
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-.top-header__inner {
-	height: 90px;
-}
-
-.top-header__question {
-	margin-right: 25px;
-}
-
-/* Menu */
-.nav {
-	max-width: 1920px;
-	margin: 0 auto;
-	padding: 0 15px;
-	background-color: #263238;
-}
-
-.menu {
-	max-width: 1170px;
-	margin: 0 auto;
-}
-
-.menu li {
-	display: inline;
-	list-style-type: none;
-	padding: 25px 35px 25px 0px;
-}
-
-.menu ul {
-	padding-left: 15px;
-	margin-top: 22px;
-	margin-bottom: 22px;
-}
-
-.menu li a {
-	font-weight: 500;
-	color: #ffffff;
-}
 
 .top {
 	background-image: url(/img/banner_img_top.jpg);
@@ -679,101 +672,6 @@ input {
 	}
 }
 
-// end style all-items
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.top-container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.top-header__inner {
-  height: 90px;
-}
-
-.top-header__block {
-  margin-right: 65px;
-}
-
-.top-header__question {
-  margin-right: 25px;
-  font-size: 15px;
-  color: #546e7a;
-}
-
-.top-header__question span {
-  color: #ec7063;
-}
-
-.top-header__question a {
-  display: inline-block;
-  text-decoration: none;
-  color: #546e7a;
-}
-
-.top-header__button {
-  margin-right: 25px;
-  position: relative;
-}
-
-.top-header__basket {
-  display: inline-block;
-  background-color: #f5f5f5;
-  font-size: 12px;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  top:-7px;
-  left: -5px;
-}
-
-.top-header__basket::after{
-  content: "";
-  display: inline-block;
-  font-size: 13px;
-  background-color: #e74e3c;
-  text-align: center;
-  vertical-align: middle;
-	color: #ffffff;
-	width: 15px;
-  height: 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  left: 20px;
-}
-
-.top-header__basket a {
-  display: inline-block;
-  text-decoration: none;
-  color: #a0a0a0;
-}
-
-.top-header__basket span {
-  display: inline-block;
-  text-align: center;
-  margin-top: 12px;
-  margin-left: 10px;
-}
 
 .icon-cart {
   font-size: 12px;
@@ -785,36 +683,6 @@ body {
   margin-left: 25px;
 }
 
-.top-header__login {
-  margin-right: 25px;
-  font-size: 12px;
-  display: inline-block;
-  color: #ffffff;
-  background-color: #8bc34a;
-  width: 72px;
-  height: 32px;
-  cursor: pointer;
-  border: 0;
-  position: absolute;
-  top: -7px;
-  border-radius: 5px;
-  position: relative;
-}
-
-.top-header__register {
-  font-size: 12px;
-  display: inline-block;
-  color: #ffffff;
-  background-color: #e74e3c;
-  width: 72px;
-  height: 32px;
-  cursor: pointer;
-  border: 0;
-  position: absolute;
-  top:-7px;
-  left: 80px;
-  border-radius: 5px;
-}
 .become__author{
     width: 700px;
     height: 300px;
